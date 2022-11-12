@@ -9,7 +9,7 @@
     "passages": [
         {
             "name": "Lobby",
-            "tags": "starting zone, home",
+            "tags": "home starting-place starting-zone initial-area",
             "id": "1",
             "text": "You are in a lobby -- THE lobby -- and it's exaclty the sort of lobby you've fantasised about your whole life. You couldn't have designed a better one. It is, simply put, the very embodiment of aesthetic perfection itself.\n\nWhile casting your eyes about its magnificence, upward glances reveal several signs above wildly varried thresholds, each enticing you to enter its mysterious subdomain. \n\nThe most exiting looking signs are [[Create Character]], [[Join Game]] and the mind-blowingly beautiful [[Manage Account]]. A sign labelled with the promising \"Add Game\" declares its undying belief in a bright and proud future. It has staked out its territory over a pile of rubble behind which you believe you catch a fleeting glimpse of dark, cavernous nothingness.\n\nThere are two pillars off to the side, one with a sign saying \"List Games\" and another with \"List Characters\". You feel that if you look at these you will gain much worldly knowledge.\n\nTwo very threatening-looking rooms in the back have signs that say ... something. It's hard to tell, being so poorly lit that far from the other, infinitely more used rooms. You think you can make out [[Delete Character]] and [[Delete Account]]. You shudder with fear, knowing that, if you parsed the signs corectly, those rooms are not for you. \n\nSimply best to forget they even exist.",
             "links": [

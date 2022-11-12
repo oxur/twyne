@@ -34,7 +34,7 @@ pub struct Passage {
 
 impl Passage {
     pub fn tags(&self) -> Vec<String> {
-        let mut tags: Vec<String> = self.tags.split(",").map(|s| s.trim().to_string()).collect();
+        let mut tags: Vec<String> = self.tags.split(" ").map(|s| s.trim().to_string()).collect();
         tags.sort();
         tags
     }
