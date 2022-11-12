@@ -1,34 +1,42 @@
 use serde::{Deserialize, Serialize};
-use serde_json::Result;
 
-#[derive(Serialize, Deserialize)]
-struct Hook {}
+#[derive(Clone, Debug, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+#[serde(rename_all = "camelCase")]
+pub struct Hook {}
 
-#[derive(Serialize, Deserialize)]
-struct Link {
-    link_text: String,
-    passage_name: String,
-    original: String,
+#[derive(Clone, Debug, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+#[serde(rename_all = "camelCase")]
+pub struct Link {
+    pub link_text: String,
+    pub passage_name: String,
+    pub original: String,
 }
 
-#[derive(Serialize, Deserialize)]
-struct Passage {
-    id: String,
-    name: String,
-    tags: Vec<String>,
-    text: String,
-    clean_text: String,
-    links: Vec<Link>,
-    hooks: Vec<Hook>,
+#[derive(Clone, Debug, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+#[serde(rename_all = "camelCase")]
+pub struct Passage {
+    pub id: String,
+    pub name: String,
+    pub tags: String,
+    pub text: String,
+    pub clean_text: String,
+    pub links: Vec<Link>,
+    pub hooks: Vec<Hook>,
 }
 
-#[derive(Serialize, Deserialize)]
-struct Game {
-    uuid: String,
-    name: String,
-    creator: String,
-    creator_version: String,
-    schema_version: String,
-    created_at_ms: u64,
-    passages: Vec<Passage>,
+#[derive(Clone, Debug, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+#[serde(rename_all = "camelCase")]
+pub struct Game {
+    pub uuid: String,
+    pub name: String,
+    pub creator: String,
+    pub creator_version: String,
+    pub schema_name: String,
+    pub schema_version: String,
+    pub created_at_ms: u64,
+    pub passages: Vec<Passage>,
 }
