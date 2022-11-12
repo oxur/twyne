@@ -3,7 +3,7 @@ use std::fs::File;
 use std::io::BufReader;
 use std::path::Path;
 use serde_json;
-use crate::schema;
+use crate::harlow::json::schema;
 
 pub fn parse_file<P: AsRef<Path>>(path: P) -> Result<schema::Game, Box<dyn Error>> {
     let file =  File::open(path)?;
