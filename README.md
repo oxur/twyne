@@ -9,6 +9,11 @@
 
 *A Rust library for parsing Twine story/game export files (JSON format)*
 
+## Supported Twine Story/Game Formats
+
+* [ ] HTML
+* [x] Harlowe 3 to JSON
+
 ## License
 
 Copyright © 2022, Oxur Group
