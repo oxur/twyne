@@ -20,7 +20,7 @@ Apache License, Version 2.0
 [logo]: resources/images/logo-v1-small.jpg
 [logo-large]: resources/images/logo-v1.jpg
 [build]: https://github.com/oxur/twyne/actions/workflows/cicd.yml
-[build-badge]: https://github.com/oxur/twyne/workflows/build/badge.svg
+[build-badge]: https://github.com/oxur/twyne/actions/workflows/cicd.yml/badge.svg
 [crate]: https://crates.io/crates/twyne
 [crate-badge]: https://img.shields.io/crates/v/twyne.svg
 [docs]: https://docs.rs/twyne/
