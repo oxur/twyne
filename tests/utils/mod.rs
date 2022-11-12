@@ -34,6 +34,13 @@ pub fn check_all_data(game: &schema::Game) {
 #[allow(dead_code)]
 pub fn check_game_data(game: &schema::Game) {
     assert_eq!(game.name, "Lobby");
+    assert_eq!(game.creator_version().major, 2);
+    assert_eq!(game.creator_version().minor, 4);
+    assert_eq!(game.creator_version().patch, 1);
+    assert_eq!(game.schema_version().major, 0);
+    assert_eq!(game.schema_version().minor, 0);
+    assert_eq!(game.schema_version().patch, 6);
+    assert_eq!(game.created_at_ms, 1658983896100);
 }
 
 #[allow(dead_code)]
@@ -42,6 +49,7 @@ pub fn check_passages_data(game: &schema::Game) {
     let passage: schema::Passage = game.passages[0].clone();
     let text: String = passage.text.chars().take(31).collect();
     assert_eq!(text, "You are in a lobby -- THE lobby");
+    assert_eq!(passage.tags(), ["home", "starting zone"]);
 }
 
 #[allow(dead_code)]
