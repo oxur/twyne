@@ -1,8 +1,8 @@
 use std::fs;
 use std::path::Path;
-use twyne::harlow::json::{Game, Link, Passage};
+use twyne::harlowe::json::{Game, Link, Passage};
 
-pub const LOBBY_GAME: &str = "resources/samples/lobby-game.json";
+pub const LOBBY_GAME: &str = "resources/samples/lobby-game.html";
 
 #[allow(dead_code)]
 pub fn lobby_game_data_str() -> String {

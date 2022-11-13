@@ -1,4 +1,4 @@
-use twyne::harlow::json::{Game, parse_file, parse_str, parse_bytes};
+use twyne::harlowe::json::{Game, parse_file, parse_str, parse_bytes};
 
 use super::utils;
 
