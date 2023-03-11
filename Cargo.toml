@@ -2,7 +2,7 @@
 name = "twyne"
 description = "A Rust library for parsing Twine story/game export files (JSON format)"
 readme = "README.md"
-version = "0.2.0-dev"
+version = "0.2.0"
 license = "Apache-2.0"
 authors = ["Duncan McGreggor <oubiwann@gmail.com>"]
 repository = "https://github.com/oxur/twyne"

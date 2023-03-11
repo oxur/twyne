@@ -18,7 +18,7 @@ pub fn lobby_game() -> Game {
     let data = lobby_game_data_str();
     let g: Game = match serde_json::from_str(&data) {
         Ok(parsed) => parsed,
-        Err(error) => panic!("Tests can't run without the sample file: {:?}", error),
+        Err(error) => panic!("Tests can't run without the sample file: {error:?}"),
     };
     g
 }
@@ -48,7 +48,10 @@ pub fn check_passages_data(game: &Game) {
     let passage: Passage = game.passages[0].clone();
     let text: String = passage.text.chars().take(31).collect();
     assert_eq!(text, "You are in a lobby -- THE lobby");
-    assert_eq!(passage.tags(), ["home", "initial-area", "starting-place", "starting-zone"]);
+    assert_eq!(
+        passage.tags(),
+        ["home", "initial-area", "starting-place", "starting-zone"]
+    );
 }
 
 #[allow(dead_code)]

@@ -2,8 +2,8 @@
 // this tool:
 // * https://github.com/jtschoonhoven/twine-to-json
 
-use serde::{Deserialize, Serialize};
 use semver;
+use serde::{Deserialize, Serialize};
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(deny_unknown_fields)]
@@ -34,7 +34,7 @@ pub struct Passage {
 
 impl Passage {
     pub fn tags(&self) -> Vec<String> {
-        let mut tags: Vec<String> = self.tags.split(" ").map(|s| s.trim().to_string()).collect();
+        let mut tags: Vec<String> = self.tags.split(' ').map(|s| s.trim().to_string()).collect();
         tags.sort();
         tags
     }
